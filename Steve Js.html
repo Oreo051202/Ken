@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <!-- Linking external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Container for all the unit converters -->
+  <div class="converter-container">
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px;
+}
+</style>
+</head>
+<body>
+
+<h1>UnitConverter</h1>
+
+    <!-- Temperature Converter -->
+    <div class="converter">
+      <!-- Input for temperature value -->
+      <input type="number" id="tempInput" placeholder="Enter value">
+      <!-- Select dropdown for temperature unit selection -->
+      <select id="tempFrom">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <!-- Button to trigger temperature conversion -->
+      <button onclick="convertTemperature()">Convert</button>
+      <!-- Display area for temperature conversion result -->
+      <p id="tempResult"></p>
+    </div>
+
+    <!-- Weight Converter -->
+    <div class="converter">
+      <!-- Input for weight value -->
+      <input type="number" id="weightInput" placeholder="Enter value">
+      <!-- Select dropdowns for weight unit selection (from and to) -->
+      <select id="weightFrom">
+        <option value="grams">Grams</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="ounces">Ounces</option>
+        <option value="pounds">Pounds</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+      <select id="weightTo">
+        <option value="grams">Grams</option>
+        <option value="kilograms">Kilograms</option>
+        <option value="ounces">Ounces</option>
+        <option value="pounds">Pounds</option>
+        <option value="milligrams">Milligrams</option>
+      </select>
+      <!-- Button to trigger weight conversion -->
+      <button onclick="convertWeight()">Convert</button>
+      <!-- Display area for weight conversion result -->
+      <p id="weightResult"></p>
+    </div>
+
+    <!-- Length Converter -->
+    <div class="converter">
+      <!-- Input for length value -->
+      <input type="number" id="lengthInput" placeholder="Enter value">
+      <!-- Select dropdowns for length unit selection (from and to) -->
+      <select id="lengthFrom">
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+        <option value="inches">Inches</option>
+        <option value="miles">Miles</option>
+        <option value="kilometers">Kilometers</option>
+      </select>
+      <select id="lengthTo">
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+        <option value="inches">Inches</option>
+        <option value="miles">Miles</option>
+        <option value="kilometers">Kilometers</option>
+      </select>
+      <!-- Button to trigger length conversion -->
+      <button onclick="convertLength()">Convert</button>
+      <!-- Display area for length conversion result -->
+      <p id="lengthResult"></p>
+    </div>
+
+    <!-- Time Converter -->
+    <div class="converter">
+      <!-- Input for time value -->
+      <input type="number" id="timeInput" placeholder="Enter value">
+      <!-- Select dropdowns for time unit selection (from and to) -->
+      <select id="timeFrom">
+        <option value="seconds">Seconds</option>
+        <option value="minutes">Minutes</option>
+        <option value="hours">Hours</option>
+        <option value="days">Days</option>
+        <option value="weeks">Weeks</option>
+      </select>
+      <select id="timeTo">
+        <option value="seconds">Seconds</option>
+        <option value="minutes">Minutes</option>
+        <option value="hours">Hours</option>
+        <option value="days">Days</option>
+        <option value="weeks">Weeks</option>
+      </select>
+      <!-- Button to trigger time conversion -->
+      <button onclick="convertTime()">Convert</button>
+      <!-- Display area for time conversion result -->
+      <p id="timeResult"></p>
+    </div>
+
+    <!-- Currency Converter -->
+    <div class="converter">
+      <!-- Input for currency amount -->
+      <input type="number" id="currencyInput" placeholder="Enter amount">
+      <!-- Select dropdowns for currency unit selection (from and to) -->
+      <select id="currencyFrom">
+        <option value="usd">USD</option>
+        <option value="php">PHP</option>
+        <option value="euro">Euro</option>
+        <option value="yen">Japanese Yen</option>
+        <option value="pound">Pound</option>
+      </select>
+      <select id="currencyTo">
+        <option value="usd">USD</option>
+        <option value="php">PHP</option>
+        <option value="euro">Euro</option>
+        <option value="yen">Japanese Yen</option>
+        <option value="pound">Pound</option>
+      </select>
+      <!-- Button to trigger currency conversion -->
+      <button onclick="convertCurrency()">Convert</button>
+      <!-- Display area for currency conversion result -->
+      <p id="currencyResult"></p>
+    </div>
+  </div>
+  
+  <!-- Including external JavaScript file -->
+  <script src="scripts.js"></script>
+</body>
+</html>
