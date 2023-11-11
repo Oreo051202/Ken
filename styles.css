@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1f20;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* This is the styling for the container of the unit converter */
+.converter-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* This is the animation to fade in the unit converter container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* This is the styling for the main heading */
+h1 {
+    color: #007bff;
+}
+
+/* This is the styling for each unit converter section */
+.converter {
+    margin: 20px 0;
+}
+
+/* This is the styling for input, select, and button elements */
+input, select, button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* This is the specific styling for input elements */
+input {
+    width: 120px;
+    border: 1px solid #007bff;
+}
+
+/* This is the styling for select dropdowns */
+select {
+    width: 140px;
+}
+
+/* This is the styling for buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* This is the hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* This is the styling for result paragraphs */
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
